@@ -22,17 +22,15 @@
 
                 @guest
                     <div class="text-end">
-                    <a href="{{ route('login.show') }}" class="btn btn-outline-light me-2">Login</a>
+                    <a href="{{ route('login.show') }}" class="btn me-2">Login</a>
                     </div>
                 @endguest
                 </form>
             </div>
         </nav>
         <div class="pull-right mt-2">
-            @auth
-                <a class="btn btn-success" href="{{ route('users.index') }}"> Daftar Karyawan</a>
-                <a class="btn btn-success" href="{{ route('roles.index') }}"> Daftar Role</a>
-            @endauth
+            <a class="btn btn-success" href="{{ route('users.index') }}"> Daftar Karyawan</a>
+            <a class="btn btn-success" href="{{ route('roles.index') }}"> Daftar Role</a>
         </div>
     </div>
 </body>
